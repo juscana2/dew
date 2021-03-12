@@ -1,21 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Activity 1: DOM manipulation</title>
-  </head>
-  <body>
-    <h1>Activity 1: DOM manipulation</h1>
-    <p>On this activity we will show the data in the variable employees in this html as a table, build all the elements with js functions</p>
-    <div id="table-container"></div>
-    <script>
-     var employees = [{"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT"},{"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},{"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},{"id":4,"name":"IRENE POMBO JORDA","department":"HR"}]
-    </script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Activity 1: DOM manipulation</title>
+</head>
+
+<body>
+  <h1>Activity 1: DOM manipulation</h1>
+  <p>On this activity we will show the data in the variable employees in this html as a table, build all the elements
+    with js functions</p>
+  <div id="table-container">
+  <table class =table id="tablaempleado">
+    
+  </table>
+ 
+  
+</div>
+  <script>
+
+    var employees = [{
+      "id": 1,
+      "name": "MIRIAM CASTIÑEIRA BREA",
+      "department": "IT"
+    },
+    {
+      "id": 2,
+      "name": "GONZALO MULET FIGUERAS",
+      "department": "IT"
+    },
+    {
+      "id": 3,
+      "name": "FRANCISCO JOSE GRAÑA BARBERA",
+      "department": "IT"
+    },
+    {
+      "id": 4,
+      "name": "IRENE POMBO JORDA",
+      "department": "HR"
+    }];
+    var crearTabla=function(lista){
+      var stringTabla="<tr><th>Id</th><th>Name</th><th>Departament</th></tr>";
+      for(var employees of lista){
+        var fila = "<tr> <td>"
+          fila += employees.id;
+          fila += "</td>"
+
+          fila += "<td>"
+          fila += employees.name;
+          fila += "</td>"
+
+          fila += "<td>"
+          fila += employees.department;
+          fila += "</td>"
+          fila+="</tr>";
+
+          //añadir al a tabla
+          stringTabla+=fila;
+         // console.log(stringTabla);
+         
+      }
+      return stringTabla;
+     
+    };
+  
+    document.getElementById("tablaempleado").innerHTML=crearTabla(employees);
+ 
+    
+</script>
+
+  
+  
+</body>
+
 </html>
