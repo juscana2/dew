@@ -1,0 +1,40 @@
+.table-container{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+   
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    border-spacing: 15px;
+    
+  }
+  th{
+      background-color: blanchedalmond;
+    text-align: center;
+ 
+  }
+
+  td {
+      background-color: rgb(245, 219, 163);
+  }
+  body{
+      margin: 50px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
