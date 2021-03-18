@@ -4,16 +4,52 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="X-UA-Compatible"content="ie-edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Activity 2: jQuery + AJAX request + DOM manipulation</title>
   </head>
   <body>
     <h1>Activity 2: jQuery + AJAX request + DOM manipulation</h1>
     <p>With JQuery load de data on the sibling file employees.json and build a table showing the data:</p>
-    <div id="table-container"></div>
-    <sript src="https://code.jquery.com/jquery-3.6.0.min.js" />
-  </body>
+    <!-- anterior <div id="table-container"></div>
+    <sript src="https://code.jquery.com/jquery-3.6.0.min.js" />-->
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          background-color: antiquewhite;
+          padding: 5px;
+        }
+        th{
+            background-color: beige;
+            text-align: center;
+        }
+        </style>
+    
+
+
+    <div class="container">
+        <div class="section">
+          
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Departament</th>
+                    </tr>
+                </thead>
+                <tbody id="res">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+ 
+
+<script src="script.js"></script>
+</body>
 </html>
