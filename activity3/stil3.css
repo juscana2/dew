@@ -1,0 +1,9 @@
+input {
+    margin: 5px;
+  }
+  
+  td {
+    background-color: rgb(122, 176, 247);
+    width: 20px;
+    height: 20px;
+  }
