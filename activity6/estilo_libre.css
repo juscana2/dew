@@ -1,0 +1,147 @@
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(252, 232, 180);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+body{
+  background-color:rgb(252, 232, 180); ;
+}
+#logo{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left:10px;
+  overflow: hidden;  
+}
+div{ font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+
+}
+
+p{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  
+}
+
+.container2:after {
+  flex-flow: column wrap;
+  justify-content:center;
+  display: flex;
+ 
+}
+#cabezera{
+  display: block;
+  background-color:rgb(195, 196, 135);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  text-align: center;
+  
+}
+h1{
+  font-family: "Times New Roman", Times, serif;
+}
+h2{
+  font-family: "Times New Roman", Times, serif;
+}
+h3{
+  font-family: "Times New Roman", Times, serif;
+  /*text-align: right;*/
+
+  
+}
+h4{
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  background-color: rgb(195, 196, 135);
+  height: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  text-align: center;
+   
+}
+.footer {
+  font-family: "Times New Roman", Times, serif;
+  padding: 3px;
+ background-color: #fcda85 ;
+  font-family:bold;
+  font-size: 20px;
+ 
+}
+.flora{
+  text-align: center;
+
+}
+.fauna{
+  text-align: center;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.contenido_caja{
+
+  display: flex;
+
+}
+.mapa{/*
+  position: relative;
+ align-self:flex-end ;
+  align-content: flex-end;
+  padding-bottom: 0%;
+  background-color: aqua;*/
+
+ float: center;
+ clear:both; 
+}
+.row{
+  background-color: #fcda85 ;
+}
+
+
+
+
+
+
