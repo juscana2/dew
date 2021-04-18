@@ -13,8 +13,9 @@
     <h1>Activity 4: Change the image</h1>
     <p>Change the following image with changed.png only if changed.png exists in the server (you need to add the images)
     </p>
-    <img src="./change.jpg" alt="just an image">
+      <img src="./change.jpg" alt="just an image">  
     <script>
+       
       
       
         fetch("./default.jpg")
@@ -25,7 +26,16 @@
                 
             }
             });
+            //PREGUNTAR A MIGUEL SI si con esta funcion sirve
+            
+            function ImageExist(img ="./default.jpg") 
+            { 
+                var img = new Image(); 
+                img.src = "change.jpg"; 
+                return img.height != 0; }
           
+
+
             
            
         
