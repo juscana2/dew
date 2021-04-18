@@ -1,0 +1,56 @@
+.grid {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border: solid 1px black;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blueviolet;
+}
+
+.block {
+  justify-content:center;
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  
+}
+.life{
+  text-align: center;
+  color: blue;
+  
+ 
+}
+.clock { 
+  width: 150px; 
+  height: 30px; 
+  padding: 5px 10px; 
+  border: 1px solid rgb(46, 19, 199); 
+  font: bold 1.5em dotum, "lucida sans", arial; 
+  text-align: center;
+  float: right; margin: 1em 3em 1em 1em; 
+  background-color: blanchedalmond;
+}
+
