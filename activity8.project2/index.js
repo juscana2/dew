@@ -17,7 +17,7 @@ let ballCurrentPosition = ballStart
 let timerId
 let score = 0
 
-//my block
+// clase + constructor block
 class Block {
   constructor(xAxis, yAxis) {
     this.bottomLeft = [xAxis, yAxis]
@@ -27,7 +27,7 @@ class Block {
   }
 }
 
-//ALL blocks
+//constante array de blocks
 const blocks = [
   new Block(30, 270),
   new Block(145, 270),
@@ -46,7 +46,7 @@ const blocks = [
   new Block(260, 180),
   new Block(380, 180),]
 
-//draw my blocks
+//diduja los blocks
 function addBlocks() {
   for (let i = 0; i < blocks.length; i++) {
     const block = document.createElement('div')
